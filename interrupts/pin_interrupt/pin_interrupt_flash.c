@@ -6,15 +6,17 @@
 *	On external interrupt on INT1 (pin 5) toggles LED connected to PB0 (pin 14).
 *
 * NOTES:
-* AVR C Runtime Library - http://savannah.nongnu.org/projects/avr-libc/
+* 	AVR C Runtime Library - http://savannah.nongnu.org/projects/avr-libc/
 *
-* AUTHOR: Andrew R. Huff	andrew@andrewhuff.me
+* AUTHOR:
+*	Andrew R. Huff	
+* 	andrew [at] andrewhuff [dot] me
 *
 */
 
 #include <avr/io.h>			// Defines pins, ports, etc.
 #include <avr/interrupt.h>	// Interrupt Macros, ISR attributes, etc.
-#include <avr/sleep.h>		// Power management ans sleep modes
+#include <avr/sleep.h>		// Power management and sleep modes
 
 volatile int PD7_led_on;	// Status bit for led
 volatile int PB0_led_on;	// Status bit for led

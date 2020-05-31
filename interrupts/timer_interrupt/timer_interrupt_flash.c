@@ -1,5 +1,22 @@
-#include <avr/io.h> //Defines pins, ports, etc.
-#include <avr/interrupt.h>
+/*
+* FILENAME: timer_interrput_flash.c
+*
+* DESCRIPTION:
+* 	Interrupt counter counts to 65,536 and triggers
+*	timer interrupt vector which toggles LED connected
+* 	to PB0 (pin 14).
+*
+* NOTES:
+* 	AVR C Runtime Library - http://savannah.nongnu.org/projects/avr-libc/
+*
+* AUTHOR:
+*	Andrew R. Huff	
+* 	andrew [at] andrewhuff [dot] me
+*
+*/
+
+#include <avr/io.h> 		// Defines pins, ports, etc.
+#include <avr/interrupt.h>	// Interrupt Macros, ISR attributes, etc.
 
 volatile int led_on;
 
