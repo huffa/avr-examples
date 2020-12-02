@@ -1,2 +1,2 @@
 # avr-examples
-Examples projects for the AVR microprocessor
+Example projects for the AVR microprocessor
